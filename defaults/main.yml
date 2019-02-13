@@ -36,8 +36,8 @@
 #############################################################################
 
 couchbase_server_edition: "enterprise"
-couchbase_server_admin: "Administrator"
-couchbase_server_password: "couchbase"
+couchbase_server_admin: "imaxon"
+couchbase_server_password: "asdfgh"
 couchbase_server_ram: 3072
 couchbase_server_admin_port: 8091
 couchbase_server_epmd_port: 4369
@@ -55,12 +55,13 @@ couchbase_server_filesystem: "ext4"
 couchbase_server_mountpoint: "/"
 couchbase_server_partition: "/dev/mapper/VolGroup-lv_root"
 couchbase_server_mount_options: "noatime,barrier=0,errors=remount-ro"
-couchbase_server_data_path: "{{ couchbase_server_home_path }}/var/lib/couchbase/data"
-couchbase_server_index_path: "{{ couchbase_server_home_path }}/var/lib/couchbase/data"
-couchbase_server_log_path: "{{ couchbase_server_home_path }}/var/lib/couchbase/logs"
+couchbase_server_data_path: "/data/couchbase/kv"
+couchbase_server_index_path: "/data/couchbase/index"
+couchbase_server_analytics_path: "/data/couchbase/analytics"
+couchbase_server_log_path: "/data/couchbase/logs"
 couchbase_server_cbbackup_path: "/opt/couchbase_backups"
 couchbase_server_cbcollect_path: "/tmp"
 couchbase_server_tmpdir: "/tmp"
-couchbase_server_tune_os: false
+couchbase_server_tune_os: true 
 couchbase_server_firewall: false
 couchbase_server_local_package: false
